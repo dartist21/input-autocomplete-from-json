@@ -2,23 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Testing page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Поиск отделения Новой Почты</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
   </head>
   <body>
-    <header>
-      <i>header</i>
-    </header>
-
-    <section>
-      <h1>Testing page</h1>
-      <img src="./img/cat.png" alt="cat">
-    </section>
-
-    <footer>
-      <b>footter</b>
-    </footer>
-
-    <script src="main.js" charset="utf-8"></script>
+    <main class="container">
+      <h1 class="container__title">Поиск отделения Новой Почты</h1>
+       <form class="search-bar" action="index.html" method="post">
+         		<i class="material-icons search-bar__icon-search  noUserSelect">search</i>
+         		<input type="text" name="header-search" value="" id="searchBarInput" class="search-bar__input" placeholder="Поиск">
+         		<i class="material-icons search-bar__icon-clear search-bar__icon-clear--display-none noUserSelect">clear</i>
+       </form>
+    </main>
+    <script src="/js/main.js" charset="utf-8"></script>
   </body>
 </html>

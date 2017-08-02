@@ -11,6 +11,7 @@ const gulp = require('gulp'),
       imagemin = require('gulp-imagemin'),
       pngquant = require('imagemin-pngquant'),
       rimraf = require('rimraf'),
+      babel = require('gulp-babel'),
       browserSync = require("browser-sync"),
       reload = browserSync.reload;
 
@@ -70,6 +71,9 @@ gulp.task('js:build', function () {
   gulp.src(path.src.js)
     .pipe(rigger())
     .pipe(sourcemaps.init())
+    .pipe(babel({
+      presets: ['es2015']
+    }))
     .pipe(uglify())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.build.js))
