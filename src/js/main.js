@@ -20,7 +20,6 @@ function displaySearchQuery(e) {
   } else {
     searchBarClearBtn.classList.remove('search-bar__icon-clear--display-none');
     renderDepartmentList();
-    // initialize();
   }
 
   function renderDepartmentList() {
