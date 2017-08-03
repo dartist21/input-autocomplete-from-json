@@ -3,20 +3,36 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>Поиск отделения Новой Почты</title>
+    <title>Поиск отделения Приватбанка</title>
+
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+
+    <script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0l9cOxxagGo8LnTz1Kb1erSGqZlX0h98">
+</script>
   </head>
   <body>
     <main class="container">
-      <h1 class="container__title">Поиск отделения Новой Почты</h1>
-       <form class="search-bar" action="index.html" method="post">
-         		<i class="material-icons search-bar__icon-search  noUserSelect">search</i>
-         		<input type="text" name="header-search" value="" id="searchBarInput" class="search-bar__input" placeholder="Поиск">
+      <h1 class="container__title">Поиск отделения Приватбанка</h1>
+      <form class="search-bar" action="index.html" method="post">
+            <i class="pb"></i>
+         		<input type="text" name="header-search" value="" id="searchBarInput" class="search-bar__input" placeholder="Поиск по адрессу" value="пр">
          		<i class="material-icons search-bar__icon-clear search-bar__icon-clear--display-none noUserSelect">clear</i>
+            <ul id="department-list">
+
+            </ul>
        </form>
+
+      <div class="department-block department-block--display-none">
+        <p id="location"><i class="material-icons department-block__icon noUserSelect">location_city</i>–</p>
+        <p id="address"><i class="material-icons department-block__icon noUserSelect">place</i>–</p>
+        <p id="email"><i class="material-icons department-block__icon noUserSelect">email</i>–</p>
+        <p id="phone"><i class="material-icons department-block__icon noUserSelect">phone</i>–</p>
+      </div>
+      <div id="map" class="department-map department-map--display-none"></div>
     </main>
     <script src="/js/main.js" charset="utf-8"></script>
   </body>

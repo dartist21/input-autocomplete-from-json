@@ -33,12 +33,13 @@ body {
 
 .container__title {
   margin: 20px 0;
+  font-weight: 400;
 }
 
 .search-bar {
   position: relative;
 
-  width: 80%;
+  width: 90%;
   min-width: 250px;
   max-width: 680px;
   margin-bottom: 20px;
@@ -52,14 +53,15 @@ body {
 .search-bar__icon-search  {
 	float: left;
 
-	width: 42px;
 	height: 100%;
 
 	text-align: center;
 
 	color: rgba(68, 68, 68, 0.5);
 
-	line-height: 42px;
+	line-height: 20px;
+  font-size: 20px;
+  padding-right: 5px;
 }
 
 
@@ -69,6 +71,7 @@ body {
 	margin: 0;
 	padding: 0;
 	padding-right: 32px;
+  width: 80%;
 
 	color: rgba(0, 0, 0, 0.76);
 	border: 0;
@@ -96,4 +99,72 @@ body {
 
 .search-bar__icon-clear:hover {
 	cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 5px 10px;
+  list-style-type: none;
+}
+
+li:hover{
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.pb {
+  float: left;
+  display: inline-block;
+  background-image: url('../img/pb.png');
+  background-size: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.department-map {
+  width: 90%;
+  height: 400px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 2px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14);
+  margin-bottom: 20px;
+}
+
+.department-block {
+  width: 90%;
+  transition: all 0.2s ease-in-out;
+
+  border-radius: 2px;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.14);
+  margin-bottom: 20px;
+}
+
+.department-block  p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 10px;
+}
+
+.department-block__icon {
+  font-size: 20px;
+  float: left;
+  color: #5b9b21;
+  padding-right: 8px;
+}
+
+.department-block--display-none {
+  display: none;
+}
+
+.department-map--display-none {
+  display: none;
 }
