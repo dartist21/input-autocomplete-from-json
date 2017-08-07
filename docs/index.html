@@ -8,20 +8,20 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
-    <link rel="stylesheet" href="/input-autocomplete-from-json/css/main.css">
+    <link rel="stylesheet" href="input-autocomplete-from-json/css/main.css">
 
     <script async defer
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0l9cOxxagGo8LnTz1Kb1erSGqZlX0h98">
 </script>
   </head>
   <body>
-    <main class="container">
-      <h1 class="container__title">Поиск отделения Приватбанка</h1>
+    <main class="department-app">
+      <h1 class="department-app__title">Поиск отделения Приватбанка</h1>
       <form class="search-bar" action="index.html" method="post">
             <i class="pb"></i>
-         		<input type="text" name="header-search" value="" id="searchBarInput" class="search-bar__input" placeholder="Поиск по адрессу" value="пр">
+         		<input type="text" name="header-search" value="" class="search-bar__input" placeholder="Поиск по адрессу" value="пр">
          		<i class="material-icons search-bar__icon-clear search-bar__icon-clear--display-none noUserSelect">clear</i>
-            <ul id="department-list">
+            <ul class="depatment-list">
 
             </ul>
        </form>
@@ -34,6 +34,6 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0l9cOxxagGo8LnTz1Kb1erSG
       </div>
       <div id="map" class="department-map department-map--display-none"></div>
     </main>
-    <script src="/input-autocomplete-from-json/js/main.js" charset="utf-8"></script>
+    <script src="input-autocomplete-from-json/js/main.js" charset="utf-8"></script>
   </body>
 </html>
