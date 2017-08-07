@@ -1,8 +1,8 @@
-const searchBarInput = document.querySelector('#searchBarInput');
+const searchBarInput = document.querySelector('.search-bar__input');
 const searchBarClearBtn = document.querySelector('.search-bar__icon-clear');
-const departmentList = document.querySelector('#department-list');
-const departmentBlock = document.querySelector(".department-block");
-const mapBlock = document.querySelector("#map");
+const departmentList = document.querySelector('.depatment-list');
+const departmentBlock = document.querySelector('.department-block');
+const mapBlock = document.querySelector('.department-map');
 
 searchBarInput.addEventListener('keyup', displaySearchQuery);
 searchBarClearBtn.addEventListener('click', clearInput);
