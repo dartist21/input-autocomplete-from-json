@@ -12,7 +12,7 @@ body {
   background-color: #c6c6c6;
 }
 
-.container {
+.department-app{
   display: flex;
   flex-direction: column;
 
@@ -31,7 +31,7 @@ body {
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.14);
 }
 
-.container__title {
+.department-app__title {
   margin: 20px 0;
   font-weight: 400;
 }
