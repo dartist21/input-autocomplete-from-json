@@ -23,7 +23,6 @@ class DepartmentApp {
   }
 
   displaySearchQuery(e) {
-    console.log('displaySearchQuery');
     this.departmentBlock.classList.add('department-block--display-none');
     this.mapBlock.classList.add('department-map--display-none');
 
@@ -40,15 +39,12 @@ class DepartmentApp {
   }
 
   renderDepartmentList(searchUrl) {
-    console.log('renderDepartmentList');
-    console.log(this.departmentList);
     const countryData  = fetch(searchUrl);
     countryData
       .then(response => {
         return response.json();
       })
       .then(data => {
-        console.log(data);
         this.clearDepartmentList();
         for(let key in data) {
           if (key < 10) {
@@ -73,7 +69,6 @@ class DepartmentApp {
   }
 
   renderChoosedDepartment(e) {
-    console.log('renderChoosedDepartment');
     this.searchBarInput.value = e.target.dataset.address;
     let choosedDepartmentFullAddress =
       e.target.dataset.city + ', ' +
@@ -84,7 +79,6 @@ class DepartmentApp {
   }
 
   createDepartmentBlock(dataset) {
-    console.log('createDepartmentBlockваппвапва');
     if (dataset.country) {
       this.locationEl.innerHTML = '<i class="material-icons department-block__icon UserSelect">location_city</i>';
       this.locationEl.innerHTML += dataset.country;
@@ -167,7 +161,6 @@ class DepartmentApp {
   }
 
   clearDepartmentList() {
-    console.log('clearDepartmentList');
     while (this.departmentList.firstChild) {
         this.departmentList.removeChild(this.departmentList.firstChild);
     }
